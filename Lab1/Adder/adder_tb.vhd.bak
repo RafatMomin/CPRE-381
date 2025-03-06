@@ -1,0 +1,48 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity tb_N_Bit_Adder is
+    -- No ports for a testbench
+end tb_N_Bit_Adder;
+
+architecture Behavioral of tb_N_Bit_Adder is
+    constant N : integer := 32;
+    signal tb_A, tb_B, tb_Sum : std_logic_vector(N-1 downto 0);
+    signal tb_Cin, tb_Cout : std_logic;
+begin
+    -- Instantiate the N-bit adder
+    UUT: entity work.N_Bit_Adder
+        Generic map (N => N)
+        Port map (
+            A => tb_A,
+            B => tb_B,
+            Cin => tb_Cin,
+            Sum => tb_Sum,
+            Cout => tb_Cout
+        );
+
+    -- Test process
+    process
+    begin
+        -- Test case 1
+        tb_A <= (others => '0');
+        tb_B <= (others => '0');
+        tb_Cin <= '0';
+        wait for 10 ns;
+
+        -- Test case 2
+        tb_A <= (others => '1');
+        tb_B <= (others => '1');
+        tb_Cin <= '0';
+        wait for 10 ns;
+
+        -- Test case 3
+        tb_A <= "11110000111100001111000011110000";
+        tb_B <= "00001111000011110000111100001111";
+        tb_Cin <= '1';
+        wait for 10 ns;
+
+        -- End simulation
+        wait;
+    end process;
+end Behavioral;

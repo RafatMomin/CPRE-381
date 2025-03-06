@@ -1,0 +1,60 @@
+architecture structural of mux2t1 is
+    
+    signal not_S : std_logic;
+    signal and_D0 : std_logic;
+    signal and_D1 : std_logic;
+
+    component invg
+        port(
+            A   : in std_logic;
+            Out : out std_logic  -- Assuming the actual output port name is Out
+        );
+    end component;
+
+    component andg2
+        port(
+            A   : in std_logic;
+            B   : in std_logic;
+            Out : out std_logic  -- Assuming the actual output port name is Out
+        );
+    end component;
+
+    component org2
+        port(
+            A   : in std_logic;
+            B   : in std_logic;
+            Out : out std_logic  -- Assuming the actual output port name is Out
+        );
+    end component;
+
+begin
+    
+    -- Inverter to generate not_S from i_S
+    inv1: invg port map (
+        A => i_S,
+        Out => not_S  -- Corrected port name
+    );
+
+    -- AND gate for i_D0 with not_S
+    and1: andg2 port map (
+        A => not_S,
+        B => i_D0,
+        Out => and_D0  -- Corrected port name
+    );
+
+    -- AND gate for i_D1 with i_S
+    and2: andg2 port map (
+        A => i_S,
+        B => i_D1,
+        Out => and_D1  -- Corrected port name
+    );
+
+    -- OR gate to combine the outputs of the two AND gates
+    or1: org2 port map (
+        A => and_D0,
+        B => and_D1,
+        Out => o_O  -- Corrected port name
+    );
+
+end structural;
+
