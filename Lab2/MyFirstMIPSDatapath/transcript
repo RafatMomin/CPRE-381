@@ -1,0 +1,769 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:45:05 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 18:45:05 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:45:05 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_MIPS_Datapath
+# -- Compiling architecture test of tb_MIPS_Datapath
+# End time: 18:45:05 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_mips_datapath -voptargs=+acc
+# vsim work.tb_mips_datapath -voptargs="+acc" 
+# Start time: 18:45:14 on Feb 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd(55): (vopt-3473) Component instance "regfile_inst : RegFile" is not bound.
+#         Region: /tb_MIPS_Datapath/uut
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd(69): (vopt-3473) Component instance "mux_inst : Mux2to1" is not bound.
+#         Region: /tb_MIPS_Datapath/uut
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd(78): (vopt-3473) Component instance "alu_inst : ALU" is not bound.
+#         Region: /tb_MIPS_Datapath/uut
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_mips_datapath(test)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mips_datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "regfile_inst : RegFile" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_mips_datapath/uut File: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# ** Warning: (vsim-3473) Component instance "mux_inst : Mux2to1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_mips_datapath/uut File: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# ** Warning: (vsim-3473) Component instance "alu_inst : ALU" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_mips_datapath/uut File: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+add wave -position insertpoint sim:/tb_mips_datapath/*
+run 100
+quit -sim
+# End time: 18:49:50 on Feb 13,2025, Elapsed time: 0:04:36
+# Errors: 0, Warnings: 7
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:51:22 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 18:51:22 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:51:22 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_MyFirstMIPSDatapath
+# -- Compiling architecture behavior of tb_MyFirstMIPSDatapath
+# End time: 18:51:22 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:51:22 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder_Subtractor
+# -- Compiling architecture Behavioral of Adder_Subtractor
+# End time: 18:51:22 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:51:22 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 18:51:22 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:51:22 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(1): (vcom-1491) Empty source files.
+# End time: 18:51:22 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:51:22 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RegFile
+# -- Compiling architecture Behavioral of RegFile
+# End time: 18:51:22 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:51:22 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_MyFirstMIPSDatapath
+# -- Compiling architecture behavior of tb_MyFirstMIPSDatapath
+# End time: 18:51:22 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_mips_datapath
+# vsim -voptargs="+acc" work.tb_mips_datapath 
+# Start time: 18:51:34 on Feb 13,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_mips_datapath(test)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mips_datapath(structural)#1
+# ** Warning: (vsim-3473) Component instance "regfile_inst : RegFile" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_mips_datapath/uut File: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# ** Warning: (vsim-3473) Component instance "mux_inst : Mux2to1" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_mips_datapath/uut File: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# ** Warning: (vsim-3473) Component instance "alu_inst : ALU" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /tb_mips_datapath/uut File: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+add wave -position insertpoint sim:/tb_mips_datapath/*
+run 100
+quit -sim
+# End time: 18:55:05 on Feb 13,2025, Elapsed time: 0:03:31
+# Errors: 0, Warnings: 3
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_MIPS_Datapath
+# -- Compiling architecture behavior of tb_MIPS_Datapath
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture Behavioral of ALU
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(1): (vcom-1491) Empty source files.
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity RegFile
+# -- Compiling architecture Behavioral of RegFile
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(31): (vcom-1136) Unknown identifier "to_integer".
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(37): (vcom-1136) Unknown identifier "to_integer".
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(38): (vcom-1136) Unknown identifier "to_integer".
+# ** Note: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(39): VHDL Compiler exiting
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_MIPS_Datapath
+# -- Compiling architecture behavior of tb_MIPS_Datapath
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture Behavioral of ALU
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux2to1
+# -- Compiling architecture Behavioral of Mux2to1
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(1): (vcom-1491) Empty source files.
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity RegFile
+# -- Compiling architecture Behavioral of RegFile
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(31): (vcom-1136) Unknown identifier "to_integer".
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(37): (vcom-1136) Unknown identifier "to_integer".
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(38): (vcom-1136) Unknown identifier "to_integer".
+# ** Note: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(39): VHDL Compiler exiting
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:57:52 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_MIPS_Datapath
+# -- Compiling architecture behavior of tb_MIPS_Datapath
+# End time: 18:57:52 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_mips_datapath
+# vsim -voptargs="+acc" work.tb_mips_datapath 
+# Start time: 18:58:07 on Feb 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd(42): (vopt-1270) Bad default binding for component instance "UUT: MIPS_Datapath".
+#  (Component port "oCarryOut" is not on the entity "work.MIPS_Datapath".)
+#  (Entity is selected because it is in the same library as the design unit that contains the component.)
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 18:58:07 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:58:20 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(1): (vcom-1491) Empty source files.
+# End time: 18:58:20 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 18:58:26 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity RegFile
+# -- Compiling architecture Behavioral of RegFile
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(31): (vcom-1136) Unknown identifier "to_integer".
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(37): (vcom-1136) Unknown identifier "to_integer".
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(38): (vcom-1136) Unknown identifier "to_integer".
+# ** Note: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(39): VHDL Compiler exiting
+# End time: 18:58:26 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:00:45 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RegFile
+# -- Compiling architecture Behavioral of RegFile
+# End time: 19:00:45 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:00:50 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RegFile
+# -- Compiling architecture Behavioral of RegFile
+# End time: 19:00:50 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:00:50 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture Behavioral of ALU
+# End time: 19:00:50 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:00:50 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 19:00:50 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:00:50 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux2to1
+# -- Compiling architecture Behavioral of Mux2to1
+# End time: 19:00:50 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:00:50 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd 
+# -- Loading package STANDARD
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(1): (vcom-1491) Empty source files.
+# End time: 19:00:50 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:00:50 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity tb_MIPS_Datapath
+# -- Compiling architecture behavior of tb_MIPS_Datapath
+# End time: 19:00:50 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.tb_mips_datapath
+# vsim -voptargs="+acc" work.tb_mips_datapath 
+# Start time: 19:00:56 on Feb 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd(42): (vopt-1270) Bad default binding for component instance "UUT: MIPS_Datapath".
+#  (Component port "oCarryOut" is not on the entity "work.MIPS_Datapath".)
+#  (Entity is selected because it is in the same library as the design unit that contains the component.)
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 19:00:56 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Load canceled
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:06:06 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Testbench_MIPS_Datapath
+# -- Compiling architecture Behavioral of Testbench_MIPS_Datapath
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd(76): near "000": (vcom-1203) String literal is not terminated with the " character.
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd(77): near "EOF": (vcom-1576) expecting ';'.
+# End time: 19:06:06 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:06:18 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Testbench_MIPS_Datapath
+# -- Compiling architecture Behavioral of Testbench_MIPS_Datapath
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd(76): near "000;": (vcom-1203) String literal is not terminated with the " character.
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd(76): String literal has a character ';' not in the enumeration type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd(77): near "EOF": (vcom-1576) expecting ';'.
+# End time: 19:06:18 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:08:24 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Testbench_MIPS_Datapath
+# -- Compiling architecture Behavioral of Testbench_MIPS_Datapath
+# End time: 19:08:24 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:08:24 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux2to1
+# -- Compiling architecture Behavioral of Mux2to1
+# End time: 19:08:24 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:08:24 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 19:08:24 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:08:24 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd(4): (vcom-1615) Existing entity 'Mux2to1' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd(4) will be overwritten.
+# -- Compiling entity Mux2to1
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd(13): (vcom-1615) Existing architecture 'Mux2to1(Behavioral)' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd(13) will be overwritten.
+# -- Compiling architecture Behavioral of Mux2to1
+# End time: 19:08:24 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:08:24 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(5): (vcom-1615) Existing entity 'RegFile' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(5) will be overwritten.
+# -- Compiling entity RegFile
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(19): (vcom-1615) Existing architecture 'RegFile(Behavioral)' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(19) will be overwritten.
+# -- Compiling architecture Behavioral of RegFile
+# End time: 19:08:24 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:08:24 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(5): (vcom-1615) Existing entity 'RegFile' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(5) will be overwritten.
+# -- Compiling entity RegFile
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(19): (vcom-1615) Existing architecture 'RegFile(Behavioral)' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(19) will be overwritten.
+# -- Compiling architecture Behavioral of RegFile
+# End time: 19:08:24 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:08:24 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Testbench_MIPS_Datapath
+# -- Compiling architecture Behavioral of Testbench_MIPS_Datapath
+# End time: 19:08:24 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.testbench_mips_datapath
+# vsim -voptargs="+acc" work.testbench_mips_datapath 
+# Start time: 19:08:32 on Feb 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd(56): (vopt-1270) Bad default binding for component instance "RegFile_inst: RegFile".
+#  (Component port "readData2" is not on the entity "work.RegFile".)
+#  (Entity is selected because it is in the same library as the design unit that contains the component.)
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd(79): (vopt-1130) Port "ALUSrc" of entity "ALU" is not in the component being instantiated.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=1.
+# Error loading design
+# End time: 19:08:32 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 1
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:34 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Testbench_MIPS_Datapath
+# -- Compiling architecture Behavioral of Testbench_MIPS_Datapath
+# End time: 19:12:34 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:34 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture Behavioral of ALU
+# End time: 19:12:34 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:34 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 19:12:34 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:34 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux2to1
+# -- Compiling architecture Behavioral of Mux2to1
+# End time: 19:12:34 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:34 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(5): (vcom-1615) Existing entity 'RegFile' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(5) will be overwritten.
+# -- Compiling entity RegFile
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(19): (vcom-1615) Existing architecture 'RegFile(Behavioral)' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(19) will be overwritten.
+# -- Compiling architecture Behavioral of RegFile
+# End time: 19:12:34 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:34 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(5): (vcom-1615) Existing entity 'RegFile' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(5) will be overwritten.
+# -- Compiling entity RegFile
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(19): (vcom-1615) Existing architecture 'RegFile(Behavioral)' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(19) will be overwritten.
+# -- Compiling architecture Behavioral of RegFile
+# End time: 19:12:34 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:34 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Testbench_MIPS_Datapath
+# -- Compiling architecture Behavioral of Testbench_MIPS_Datapath
+# End time: 19:12:35 on Feb 13,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:35 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Testbench_MIPS_Datapath
+# -- Compiling architecture Behavioral of Testbench_MIPS_Datapath
+# End time: 19:12:35 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:35 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(5): (vcom-1615) Existing entity 'RegFile' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(5) will be overwritten.
+# -- Compiling entity RegFile
+# ** Warning: /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/regfile.vhd(19): (vcom-1615) Existing architecture 'RegFile(Behavioral)' at /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/registerfile.vhd(19) will be overwritten.
+# -- Compiling architecture Behavioral of RegFile
+# End time: 19:12:35 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:35 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mux2_1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux2to1
+# -- Compiling architecture Behavioral of Mux2to1
+# End time: 19:12:35 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:35 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MIPS_Datapath
+# -- Compiling architecture Structural of MIPS_Datapath
+# End time: 19:12:35 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 19:12:35 on Feb 13,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MyFirstMIPSDatapath/adder_sub.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture Behavioral of ALU
+# End time: 19:12:35 on Feb 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.testbench_mips_datapath
+# vsim -voptargs="+acc" work.testbench_mips_datapath 
+# Start time: 19:12:46 on Feb 13,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench_mips_datapath(behavioral)#1
+# Loading work.mips_datapath(structural)#1
+# Loading work.regfile(behavioral)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.alu(behavioral)#1
+add wave -position insertpoint sim:/testbench_mips_datapath/*
+run 100
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_mips_datapath/uut/RegFile_inst
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /testbench_mips_datapath/uut/RegFile_inst
+run 100
+quit -sim
+# End time: 19:16:22 on Feb 13,2025, Elapsed time: 0:03:36
+# Errors: 0, Warnings: 3

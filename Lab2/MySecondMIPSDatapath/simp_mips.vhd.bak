@@ -1,0 +1,114 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity Simplified_MIPS is
+    port (
+        clk          : in std_logic;
+        reset        : in std_logic;
+        reg_write    : in std_logic;
+        mem_read     : in std_logic;
+        mem_write    : in std_logic;
+        alu_src      : in std_logic;
+        mem_to_reg   : in std_logic;
+        reg_dst      : in std_logic;
+        opcode       : in std_logic_vector(5 downto 0);
+        rs, rt, rd   : in std_logic_vector(4 downto 0);
+        imm16        : in std_logic_vector(15 downto 0);
+        reg_data     : out std_logic_vector(31 downto 0)
+    );
+end entity Simplified_MIPS;
+
+architecture Structural of Simplified_MIPS is
+
+    component Extender
+        port (
+            input_16bit  : in std_logic_vector(15 downto 0);
+            sign_extend  : in std_logic;
+            output_32bit : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    component DataMemory
+        port (
+            clk          : in std_logic;
+            address      : in std_logic_vector(31 downto 0);
+            write_data   : in std_logic_vector(31 downto 0);
+            read_data    : out std_logic_vector(31 downto 0);
+            mem_read     : in std_logic;
+            mem_write    : in std_logic
+        );
+    end component;
+
+    component RegFile
+        port (
+            clk          : in std_logic;
+            reset        : in std_logic;
+            reg_write    : in std_logic;
+            rs, rt, rd   : in std_logic_vector(4 downto 0);
+            write_data   : in std_logic_vector(31 downto 0);
+            read_data1   : out std_logic_vector(31 downto 0);
+            read_data2   : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    signal alu_result  : std_logic_vector(31 downto 0);
+    signal mem_data    : std_logic_vector(31 downto 0);
+    signal reg_data1   : std_logic_vector(31 downto 0);
+    signal reg_data2   : std_logic_vector(31 downto 0);
+    signal immediate   : std_logic_vector(31 downto 0);
+    signal write_data  : std_logic_vector(31 downto 0);
+
+begin
+    -- Extend the immediate value
+    Extender_inst: Extender
+        port map (
+            input_16bit  => imm16,
+            sign_extend  => alu_src,
+            output_32bit => immediate
+        );
+
+    -- Register File
+    RegFile_inst: RegFile
+        port map (
+            clk        => clk,
+            reset      => reset,
+            reg_write  => reg_write,
+            rs         => rs,
+            rt         => rt,
+            rd         => rd,
+            write_data => write_data,
+            read_data1 => reg_data1,
+            read_data2 => reg_data2
+        );
+
+    -- Data Memory
+    DataMemory_inst: DataMemory
+        port map (
+            clk         => clk,
+            address     => alu_result,
+            write_data  => reg_data2,
+            read_data   => mem_data,
+            mem_read    => mem_read,
+            mem_write   => mem_write
+        );
+
+    -- Assign ALU result (simplified)
+    alu_result <= reg_data1 + immediate when alu_src = '1' else
+                  reg_data1 + reg_data2;
+
+    -- Control logic to determine write data
+    process(mem_to_reg, alu_result, mem_data)
+    begin
+        if mem_to_reg = '1' then
+            write_data <= mem_data;
+        else
+            write_data <= alu_result;
+        end if;
+    end process;
+
+    -- Output reg_data assignment
+    reg_data <= write_data;  -- Ensuring reg_data is correctly driven
+
+end architecture Structural;

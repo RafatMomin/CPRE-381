@@ -1,0 +1,197 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Simplified_MIPS_tb is
+end entity Simplified_MIPS_tb;
+
+architecture Behavioral of Simplified_MIPS_tb is
+    signal clk          : std_logic := '0';
+    signal reset        : std_logic := '0';
+    signal reg_write    : std_logic;
+    signal mem_read     : std_logic;
+    signal mem_write    : std_logic;
+    signal alu_src      : std_logic;
+    signal mem_to_reg   : std_logic;
+    signal reg_dst      : std_logic;
+    signal opcode       : std_logic_vector(5 downto 0);
+    signal rs, rt, rd   : std_logic_vector(4 downto 0);
+    signal imm16        : std_logic_vector(15 downto 0);
+    signal reg_data     : std_logic_vector(31 downto 0);
+
+    component Simplified_MIPS
+        port (
+            clk          : in std_logic;
+            reset        : in std_logic;
+            reg_write    : in std_logic;
+            mem_read     : in std_logic;
+            mem_write    : in std_logic;
+            alu_src      : in std_logic;
+            mem_to_reg   : in std_logic;
+            reg_dst      : in std_logic;
+            opcode       : in std_logic_vector(5 downto 0);
+            rs, rt, rd   : in std_logic_vector(4 downto 0);
+            imm16        : in std_logic_vector(15 downto 0);
+            reg_data     : out std_logic_vector(31 downto 0)
+        );
+    end component;
+
+    -- Clock generation
+    constant clk_period : time := 10 ns;
+begin
+    clk_process : process
+    begin
+        clk <= '0';
+        wait for clk_period/2;
+        clk <= '1';
+        wait for clk_period/2;
+    end process;
+
+    uut: Simplified_MIPS
+        port map (
+            clk         => clk,
+            reset       => reset,
+            reg_write   => reg_write,
+            mem_read    => mem_read,
+            mem_write   => mem_write,
+            alu_src     => alu_src,
+            mem_to_reg  => mem_to_reg,
+            reg_dst     => reg_dst,
+            opcode      => opcode,
+            rs          => rs,
+            rt          => rt,
+            rd          => rd,
+            imm16       => imm16,
+            reg_data    => reg_data
+        );
+
+    -- Test case process
+    process
+    begin
+        -- Initialize control signals and inputs
+        reset <= '1';
+        wait for clk_period;
+        reset <= '0';
+
+        -- Test addi $25, $0, 0
+        reg_write <= '1';
+        mem_read <= '0';
+        mem_write <= '0';
+        alu_src <= '1';
+        mem_to_reg <= '0';
+        reg_dst <= '1';
+        opcode <= "001000"; -- addi
+        rs <= "00000"; -- $0
+        rt <= "11001"; -- $25
+        imm16 <= "0000000000000000"; -- 0
+        wait for clk_period;
+
+        -- Test addi $26, $0, 256
+        reg_write <= '1';
+        mem_read <= '0';
+        mem_write <= '0';
+        alu_src <= '1';
+        mem_to_reg <= '0';
+        reg_dst <= '1';
+        opcode <= "001000"; -- addi
+        rs <= "00000"; -- $0
+        rt <= "11010"; -- $26
+        imm16 <= "0000000100000000"; -- 256
+        wait for clk_period;
+
+        -- Test lw $1, 0($25)
+        reg_write <= '1';
+        mem_read <= '1';
+        mem_write <= '0';
+        alu_src <= '1';
+        mem_to_reg <= '1';
+        reg_dst <= '0';
+        opcode <= "100011"; -- lw
+        rs <= "11001"; -- $25
+        rt <= "00001"; -- $1
+        imm16 <= "0000000000000000"; -- 0
+        wait for clk_period;
+
+        -- Test lw $2, 4($25)
+        reg_write <= '1';
+        mem_read <= '1';
+        mem_write <= '0';
+        alu_src <= '1';
+        mem_to_reg <= '1';
+        reg_dst <= '0';
+        opcode <= "100011"; -- lw
+        rs <= "11001"; -- $25
+        rt <= "00010"; -- $2
+        imm16 <= "0000000000000100"; -- 4
+        wait for clk_period;
+
+        -- Test add $1, $1, $2
+        reg_write <= '1';
+        mem_read <= '0';
+        mem_write <= '0';
+        alu_src <= '0';
+        mem_to_reg <= '0';
+        reg_dst <= '1';
+        opcode <= "000000"; -- R-type (add)
+        rs <= "00001"; -- $1
+        rt <= "00010"; -- $2
+        rd <= "00001"; -- $1
+        wait for clk_period;
+
+        -- Test sw $1, 0($26)
+        reg_write <= '0';
+        mem_read <= '0';
+        mem_write <= '1';
+        alu_src <= '1';
+        mem_to_reg <= '0';
+        reg_dst <= '0';
+        opcode <= "101011"; -- sw
+        rs <= "11010"; -- $26
+        rt <= "00001"; -- $1
+        imm16 <= "0000000000000000"; -- 0
+        wait for clk_period;
+
+        -- Test lw $2, 8($25)
+        reg_write <= '1';
+        mem_read <= '1';
+        mem_write <= '0';
+        alu_src <= '1';
+        mem_to_reg <= '1';
+        reg_dst <= '0';
+        opcode <= "100011"; -- lw
+        rs <= "11001"; -- $25
+        rt <= "00010"; -- $2
+        imm16 <= "0000000000001000"; -- 8
+        wait for clk_period;
+
+        -- Test add $1, $1, $2
+        reg_write <= '1';
+        mem_read <= '0';
+        mem_write <= '0';
+        alu_src <= '0';
+        mem_to_reg <= '0';
+        reg_dst <= '1';
+        opcode <= "000000"; -- R-type (add)
+        rs <= "00001"; -- $1
+        rt <= "00010"; -- $2
+        rd <= "00001"; -- $1
+        wait for clk_period;
+
+        -- Test sw $1, 4($26)
+        reg_write <= '0';
+        mem_read <= '0';
+        mem_write <= '1';
+        alu_src <= '1';
+        mem_to_reg <= '0';
+        reg_dst <= '0';
+        opcode <= "101011"; -- sw
+        rs <= "11010"; -- $26
+        rt <= "00001"; -- $1
+        imm16 <= "0000000000000100"; -- 4
+        wait for clk_period;
+
+        -- Continue with remaining instructions in a similar manner...
+
+        wait;
+    end process;
+end architecture Behavioral;
+

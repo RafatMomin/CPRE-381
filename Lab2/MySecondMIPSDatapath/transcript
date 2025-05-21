@@ -1,0 +1,471 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:34:00 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading entity Simplified_MIPS_tb
+# End time: 13:34:00 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:34:00 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Compiling entity Simplified_MIPS
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(3): (vcom-1136) Unknown identifier "std_logic".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(4): (vcom-1136) Unknown identifier "std_logic".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(5): (vcom-1136) Unknown identifier "std_logic".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(6): (vcom-1136) Unknown identifier "std_logic".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(7): (vcom-1136) Unknown identifier "std_logic".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(8): (vcom-1136) Unknown identifier "std_logic".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(9): (vcom-1136) Unknown identifier "std_logic".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(10): (vcom-1136) Unknown identifier "std_logic".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(11): (vcom-1136) Unknown identifier "std_logic_vector".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(12): (vcom-1136) Unknown identifier "std_logic_vector".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(13): (vcom-1136) Unknown identifier "std_logic_vector".
+# ** Error: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(14): (vcom-1136) Unknown identifier "std_logic_vector".
+# ** Note: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(16): VHDL Compiler exiting
+# End time: 13:34:00 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 12, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:35:42 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:35:42 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:35:55 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:35:55 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:35:55 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:35:55 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:35:55 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Simplified_MIPS_tb
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# End time: 13:35:55 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.simplified_mips_tb
+# vsim work.simplified_mips_tb 
+# Start time: 13:36:19 on Feb 17,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(51): (vopt-3473) Component instance "Extender_inst : Extender" is not bound.
+#         Region: /Simplified_MIPS_tb/uut
+# ** Warning: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(59): (vopt-3473) Component instance "DataMemory_inst : DataMemory" is not bound.
+#         Region: /Simplified_MIPS_tb/uut
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.simplified_mips_tb(behavioral)#1
+# ** Warning: (vsim-3473) Component instance "Extender_inst : Extender" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /simplified_mips_tb/uut File: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# ** Warning: (vsim-3473) Component instance "DataMemory_inst : DataMemory" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /simplified_mips_tb/uut File: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+add wave -position insertpoint sim:/simplified_mips_tb/*
+run 100
+run 100
+quit -sim
+# End time: 13:38:20 on Feb 17,2025, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 4
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:38:31 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:38:31 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:38:31 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:38:32 on Feb 17,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:38:32 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Simplified_MIPS_tb
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# End time: 13:38:32 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:38:32 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:38:32 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:38:32 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Simplified_MIPS_tb
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# End time: 13:38:32 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.simplified_mips_tb -voptargs=+acc
+# vsim work.simplified_mips_tb -voptargs="+acc" 
+# Start time: 13:38:46 on Feb 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(51): (vopt-3473) Component instance "Extender_inst : Extender" is not bound.
+#         Region: /Simplified_MIPS_tb/uut
+# ** Warning: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(59): (vopt-3473) Component instance "DataMemory_inst : DataMemory" is not bound.
+#         Region: /Simplified_MIPS_tb/uut
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.simplified_mips_tb(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.simplified_mips(structural)#1
+# ** Warning: (vsim-3473) Component instance "Extender_inst : Extender" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /simplified_mips_tb/uut File: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# ** Warning: (vsim-3473) Component instance "DataMemory_inst : DataMemory" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /simplified_mips_tb/uut File: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+add wave -position insertpoint sim:/simplified_mips_tb/*
+run 100
+run 200
+quit -sim
+# End time: 13:41:43 on Feb 17,2025, Elapsed time: 0:02:57
+# Errors: 0, Warnings: 5
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:41:51 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:41:51 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:43:08 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:43:08 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:43:08 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Simplified_MIPS_tb
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# End time: 13:43:08 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:43:08 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:43:08 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.simplified_mips_tb
+# vsim -voptargs="+acc" work.simplified_mips_tb 
+# Start time: 13:43:21 on Feb 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Error (suppressible): /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(73): (vopt-1270) Bad default binding for component instance "RegFile_inst: RegFile".
+#  (Component port "read_data2" is not on the entity "work.regfile".)
+#  (Entity is selected because it is in the same library as the design unit that contains the component.)
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 13:43:22 on Feb 17,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:47:34 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:47:34 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:47:34 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Simplified_MIPS_tb
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# End time: 13:47:34 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:47:34 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:47:35 on Feb 17,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:47:35 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:47:35 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:47:35 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Simplified_MIPS_tb
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# End time: 13:47:35 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.simplified_mips_tb
+# vsim -voptargs="+acc" work.simplified_mips_tb 
+# Start time: 13:47:49 on Feb 17,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(52): (vopt-3473) Component instance "Extender_inst : Extender" is not bound.
+#         Region: /Simplified_MIPS_tb/uut
+# ** Warning: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(60): (vopt-3473) Component instance "DataMemory_inst : DataMemory" is not bound.
+#         Region: /Simplified_MIPS_tb/uut
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.simplified_mips_tb(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.simplified_mips(structural)#1
+# ** Warning: (vsim-3473) Component instance "Extender_inst : Extender" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /simplified_mips_tb/uut File: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# ** Warning: (vsim-3473) Component instance "DataMemory_inst : DataMemory" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /simplified_mips_tb/uut File: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+add wave -position insertpoint sim:/simplified_mips_tb/*
+run 100
+quit -sim
+# End time: 13:51:14 on Feb 17,2025, Elapsed time: 0:03:25
+# Errors: 0, Warnings: 5
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:51:26 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:51:26 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:51:26 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Simplified_MIPS_tb
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# End time: 13:51:26 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:51:26 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:51:26 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:51:26 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:51:26 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:51:26 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Simplified_MIPS_tb
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# End time: 13:51:26 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:51:26 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Simplified_MIPS
+# -- Compiling architecture Structural of Simplified_MIPS
+# End time: 13:51:27 on Feb 17,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+# QuestaSim-64 vcom 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:51:27 on Feb 17,2025
+# vcom -reportprogress 300 -work work /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Simplified_MIPS_tb
+# -- Compiling architecture Behavioral of Simplified_MIPS_tb
+# End time: 13:51:27 on Feb 17,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.simplified_mips_tb
+# vsim -voptargs="+acc" work.simplified_mips_tb 
+# Start time: 13:51:35 on Feb 17,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Warning: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(52): (vopt-3473) Component instance "Extender_inst : Extender" is not bound.
+#         Region: /Simplified_MIPS_tb/uut
+# ** Warning: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd(60): (vopt-3473) Component instance "DataMemory_inst : DataMemory" is not bound.
+#         Region: /Simplified_MIPS_tb/uut
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.simplified_mips_tb(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.simplified_mips(structural)#1
+# ** Warning: (vsim-3473) Component instance "Extender_inst : Extender" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /simplified_mips_tb/uut File: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+# ** Warning: (vsim-3473) Component instance "DataMemory_inst : DataMemory" is not bound.
+#    Time: 0 ns  Iteration: 0  Instance: /simplified_mips_tb/uut File: /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+add wave -position insertpoint sim:/simplified_mips_tb/*
+run 100
+run 100
+quit -sim
+# End time: 13:53:05 on Feb 17,2025, Elapsed time: 0:01:30
+# Errors: 0, Warnings: 5

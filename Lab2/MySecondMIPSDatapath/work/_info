@@ -1,0 +1,273 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+Z2 !s12c _opt1
+R1
+R2
+R1
+R0
+R1
+R0
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 d/home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath
+T_opt
+!s110 1739821895
+V7TgM34B;B]W2W=MD0E6Mj2
+Z4 04 18 10 work simplified_mips_tb behavioral 1
+=1-7486e228c89d-67b39347-d6931-426c
+R1
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
+o-quiet -auto_acc_if_foreign -work work +acc
+Z9 tCvgOpt 0
+n@_opt
+Z10 OL;O;2024.2;79
+T_opt1
+!s110 1739820979
+V=m1Y;XngHM_iGWGl1EW0G3
+R4
+=1-7486e228c89d-67b38fb3-1b013-3e2f
+R1
+R5
+R6
+R7
+R8
+o-quiet -auto_acc_if_foreign -work work
+R9
+n@_opt1
+R10
+R3
+Emysecondmipsdatapath
+Z11 w1739820469
+Z12 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z13 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z14 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z15 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 15
+R3
+Z16 8/home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+Z17 F/home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd
+l0
+L6 1
+VlXzch;^n>zHFzM57iBBT@1
+!s100 K:EH;enb3fW:XS:PVRazN1
+Z18 OL;C;2024.2;79
+32
+Z19 !s110 1739820699
+!i10b 1
+Z20 !s108 1739820699.000000
+Z21 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd|
+Z22 !s107 /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/simp_mips.vhd|
+!i113 0
+Z23 o-work work
+Z24 tExplicit 1 CvgOpt 0
+Astructural
+R12
+R13
+R14
+R15
+DEx4 work 20 mysecondmipsdatapath 0 22 lXzch;^n>zHFzM57iBBT@1
+!i122 15
+l54
+L16 95
+V2bVIHQ>kKHGh^R_8@O`R11
+!s100 ?IhIBPK6ZzOGhSPno5>@20
+R18
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R23
+R24
+Eregfile
+Z25 w1738881962
+Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R14
+R15
+!i122 10
+R3
+Z27 8/home/rafatmom/CprE381/Lab2/RegFile/regfile.vhd
+Z28 F/home/rafatmom/CprE381/Lab2/RegFile/regfile.vhd
+l0
+L5 1
+VR=hHSa6YBg`n=bAlSl[0F3
+!s100 :<6m`ZiI6Mf4Te4S<oWYG2
+R18
+32
+Z29 !s110 1739820657
+!i10b 1
+Z30 !s108 1739820657.000000
+Z31 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/RegFile/regfile.vhd|
+Z32 !s107 /home/rafatmom/CprE381/Lab2/RegFile/regfile.vhd|
+!i113 0
+R23
+R24
+Artl
+R26
+R14
+R15
+DEx4 work 7 regfile 0 22 R=hHSa6YBg`n=bAlSl[0F3
+!i122 10
+l23
+L19 20
+VB6bF8B2^d>Z;OF6L]o4o?0
+!s100 c:d:EW_S@5?WE@5N?9G2;2
+R18
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 0
+R23
+R24
+Esimplified_mips
+Z33 w1739821448
+R12
+R13
+R14
+R15
+!i122 40
+R3
+R16
+R17
+l0
+L6 1
+VPj<L4Q]TTeOK7Gc8UCMNM2
+!s100 UzJhb4l6_2Z0XBUf8Gm;`1
+R18
+32
+Z34 !s110 1739821886
+!i10b 1
+Z35 !s108 1739821886.000000
+R21
+R22
+!i113 0
+R23
+R24
+Astructural
+R12
+R13
+R14
+R15
+DEx4 work 15 simplified_mips 0 22 Pj<L4Q]TTeOK7Gc8UCMNM2
+!i122 40
+l50
+L23 62
+VBWdj5=TW@8Z2HDRjFYSN`0
+!s100 oa3;MV9cLXY7[z?0>Ao1b0
+R18
+32
+R34
+!i10b 1
+R35
+R21
+R22
+!i113 0
+R23
+R24
+Esimplified_mips_tb
+Z36 w1739821882
+R14
+R15
+!i122 41
+R3
+Z37 8/home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+Z38 F/home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd
+l0
+L4 1
+VPmC_NQk@^S;NQU:PdLVRd1
+!s100 CU=P?ZHDn0MRZ<LTP_f_A1
+R18
+32
+Z39 !s110 1739821887
+!i10b 1
+Z40 !s108 1739821887.000000
+Z41 !s90 -reportprogress|300|-work|work|/home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd|
+Z42 !s107 /home/rafatmom/CprE381/Lab2/MySecondMIPSDatapath/tb_mips.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R14
+R15
+DEx4 work 18 simplified_mips_tb 0 22 PmC_NQk@^S;NQU:PdLVRd1
+!i122 41
+l40
+L7 193
+V`loVBV_EE2De;lBNIDkl<0
+!s100 XoT@?=@g__Daji]QRVKZf1
+R18
+32
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 0
+R23
+R24
+Etb_mysecondmipsdatapath
+Z43 w1739820693
+R12
+R13
+R14
+R15
+!i122 16
+R3
+R37
+R38
+l0
+L6 1
+VI0b_WTLdV`L9WHREzHTWa1
+!s100 g@KC<6??_zg7SSAFE>Cg72
+R18
+32
+R19
+!i10b 1
+R20
+R41
+R42
+!i113 0
+R23
+R24
+Abehavior
+R12
+R13
+R14
+R15
+DEx4 work 23 tb_mysecondmipsdatapath 0 22 I0b_WTLdV`L9WHREzHTWa1
+!i122 16
+l27
+L9 137
+V>m^5>VX@m5H7j0<:M^ZA:2
+!s100 FTgE5hLbdY0AbkA9`RTAl1
+R18
+32
+R19
+!i10b 1
+R20
+R41
+R42
+!i113 0
+R23
+R24
