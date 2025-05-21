@@ -1,0 +1,96 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity ALU_tb is
+end ALU_tb;
+
+architecture testbench of ALU_tb is
+    
+    -- Component Declaration for ALU
+    component ALU
+        port (
+            iA        : in std_logic_vector(31 downto 0);
+            iB        : in std_logic_vector(31 downto 0);
+            ALUCtrl   : in std_logic_vector(3 downto 0);
+            resultF   : out std_logic_vector(31 downto 0);
+            CarryOut  : out std_logic;
+            Overflow  : out std_logic;
+            Zero      : out std_logic
+        );
+    end component;
+    
+    -- Testbench signals
+    signal iA, iB, resultF : std_logic_vector(31 downto 0);
+    signal ALUCtrl : std_logic_vector(3 downto 0);
+    signal CarryOut, Overflow, Zero : std_logic;
+    
+begin
+    
+    -- Instantiate ALU
+    uut: ALU
+        port map (
+            iA => iA,
+            iB => iB,
+            ALUCtrl => ALUCtrl,
+            resultF => resultF,
+            CarryOut => CarryOut,
+            Overflow => Overflow,
+            Zero => Zero
+        );
+    
+    -- Stimulus Process
+    process
+    begin
+        -- Test Case 1: ADD (iA + iB)
+        iA <= x"00000005"; 
+        iB <= x"00000003";
+        ALUCtrl <= "0000"; -- ADD
+        wait for 10 ns;
+
+        -- Test Case 2: SUB (iA - iB)
+        iA <= x"00000008"; 
+        iB <= x"00000003";
+        ALUCtrl <= "0001"; -- SUB
+        wait for 10 ns;
+
+        -- Test Case 3: AND (iA AND iB)
+        iA <= x"0000000F"; 
+        iB <= x"000000F0";
+        ALUCtrl <= "0010"; -- AND
+        wait for 10 ns;
+        
+        -- Test Case 4: OR (iA OR iB)
+        ALUCtrl <= "0011"; -- OR
+        wait for 10 ns;
+        
+        -- Test Case 5: XOR (iA XOR iB)
+        ALUCtrl <= "0100"; -- XOR
+        wait for 10 ns;
+
+        -- Test Case 6: NOR (iA NOR iB)
+        ALUCtrl <= "0101"; -- NOR
+        wait for 10 ns;
+
+        -- Test Case 7: SLT (Set Less Than)
+        iA <= x"00000002"; 
+        iB <= x"00000003";
+        ALUCtrl <= "1011"; -- SLT
+        wait for 10 ns;
+
+        -- Test Case 8: Shift Left
+        iA <= x"00000004";
+        iB <= x"00000001";
+        ALUCtrl <= "0111"; -- Shift Left
+        wait for 10 ns;
+
+        -- Test Case 9: Shift Right
+        ALUCtrl <= "1000"; -- Shift Right (assuming 0111 for right shift)
+        wait for 10 ns;
+
+        -- Finish simulation
+        wait;
+    end process;
+    
+end testbench;
+

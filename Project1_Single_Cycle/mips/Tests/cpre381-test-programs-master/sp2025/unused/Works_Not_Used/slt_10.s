@@ -1,0 +1,22 @@
+.data
+.text
+.globl main
+main:
+	# This test case is here to show that slt can properly handle negative numbers but where the magnitude of the positive number is greater, in the case where slt should be 1
+	# -2 < 9 -> 1
+
+	# Using registers $8, $9, and $10 as these are temporary registers in MIPS
+	# Start Test
+	# Clear registers
+	andi $8, $0, 0
+	andi $9, $0, 0
+	andi $10, $0, 0
+
+	# Test 2: Set $8 to 1 if $9 < $10, else 0. same in all
+	addi $9, $0, -2
+	addi $10, $0, 9
+	slt $8, $9, $10 # $9 < $10, so $8 should be 1
+	# End Test
+
+	# Exit program
+	halt
