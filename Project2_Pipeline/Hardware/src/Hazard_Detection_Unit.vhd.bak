@@ -1,0 +1,83 @@
+library ieee;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Hazard_Detection_Unit is
+    port(
+        -- Instruction register addresses from ID stage
+        i_ID_Rs_Addr        : in std_logic_vector(4 downto 0);
+        i_ID_Rt_Addr        : in std_logic_vector(4 downto 0);
+        
+        -- Register destination from ID/EX stage (destination of load instruction)
+        i_ID_EX_Rd_Addr     : in std_logic_vector(4 downto 0);  -- For R-type instructions
+        i_ID_EX_Rt_Addr     : in std_logic_vector(4 downto 0);  -- For I-type instructions
+        i_ID_EX_RegDest     : in std_logic_vector(1 downto 0);  -- RegDest control signal
+        
+        -- Memory read signal from ID/EX stage (indicates a load instruction)
+        i_ID_EX_MemRead     : in std_logic;
+        i_ID_EX_MemToReg    : in std_logic;  -- Additional check to confirm load instruction
+        
+        -- Control hazard signals
+        i_ID_Branch         : in std_logic;   -- Branch control signal
+        i_ID_Jump           : in std_logic;   -- Jump control signal
+        i_ID_JR             : in std_logic;   -- Jump Register control signal
+        i_BranchTaken       : in std_logic;   -- Branch condition met
+        
+        -- Stall and flush control outputs
+        o_PC_Stall          : out std_logic;  -- Stall the PC
+        o_IF_ID_Stall       : out std_logic;  -- Stall the IF/ID register
+        o_ID_EX_Stall       : out std_logic;  -- Stall the ID/EX register
+        o_IF_ID_Flush       : out std_logic;  -- Flush the IF/ID register
+        o_ID_EX_Flush       : out std_logic   -- Flush the ID/EX register
+    );
+end Hazard_Detection_Unit;
+
+architecture behavioral of Hazard_Detection_Unit is
+    signal s_load_use_hazard   : std_logic;
+    signal s_branch_taken      : std_logic;
+    signal s_jump_taken        : std_logic;
+    signal s_ID_EX_WriteReg    : std_logic_vector(4 downto 0);  -- Actual destination register
+begin
+    -- Determine the actual write register based on RegDest
+    process(i_ID_EX_RegDest, i_ID_EX_Rt_Addr, i_ID_EX_Rd_Addr)
+    begin
+        if i_ID_EX_RegDest = "00" then
+            s_ID_EX_WriteReg <= i_ID_EX_Rt_Addr;  -- For I-type instructions (including load)
+        elsif i_ID_EX_RegDest = "01" then
+            s_ID_EX_WriteReg <= i_ID_EX_Rd_Addr;  -- For R-type instructions
+        elsif i_ID_EX_RegDest = "10" then
+            s_ID_EX_WriteReg <= "11111";          -- $31 for JAL
+        else
+            s_ID_EX_WriteReg <= "00000";          -- Default case
+        end if;
+    end process;
+    
+    -- Detect load-use hazard - true only when:
+    -- 1. The instruction in EX stage is a load (MemRead = '1' and MemToReg = '1')
+    -- 2. The destination register of that load matches a source register of the instruction in ID
+    -- 3. The register is not $0 (hardwired to zero in MIPS)
+    s_load_use_hazard <= '1' when (i_ID_EX_MemRead = '1' and i_ID_EX_MemToReg = '1' and
+                                  ((s_ID_EX_WriteReg = i_ID_Rs_Addr and i_ID_Rs_Addr /= "00000") or 
+                                   (s_ID_EX_WriteReg = i_ID_Rt_Addr and i_ID_Rt_Addr /= "00000")))
+                             else '0';
+                             
+    -- Detect if branch is taken
+    s_branch_taken <= '1' when (i_ID_Branch = '1' and i_BranchTaken = '1')
+                         else '0';
+                         
+    -- Detect jump instructions
+    s_jump_taken <= '1' when (i_ID_Jump = '1' or i_ID_JR = '1')
+                       else '0';
+    
+    -- Generate stall signals for load-use hazards
+    o_PC_Stall <= s_load_use_hazard;
+    o_IF_ID_Stall <= s_load_use_hazard;
+    o_ID_EX_Stall <= '0';  -- We don't stall ID/EX for load-use hazards
+    
+    -- Generate flush signals for control hazards
+    o_IF_ID_Flush <= s_branch_taken or s_jump_taken;
+    
+    -- For load-use hazards, we need to flush the ID/EX register (insert a bubble)
+    o_ID_EX_Flush <= s_load_use_hazard;
+    
+end behavioral;

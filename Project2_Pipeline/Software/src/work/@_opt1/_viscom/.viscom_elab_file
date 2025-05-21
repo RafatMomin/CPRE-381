@@ -1,0 +1,1 @@
+/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 15679776 work.if_id_registers -quiet -auto_acc_if_foreign -work work -allow_unnamed -o _opt1 -id 1-7486e228ad85-680ab367-9c7a5-befe +__design_bin_path+/home/tkloser/Desktop/SW-Testing/sw-cpre381-toolflow/cpre381-toolflow/proj/src

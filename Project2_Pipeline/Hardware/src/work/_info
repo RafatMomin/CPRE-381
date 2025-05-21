@@ -1,0 +1,1839 @@
+m255
+K4
+z2
+Z0 !s12c _opt1
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s12c _opt2
+R1
+Z2 !s12c _opt
+R1
+R0
+R1
+R2
+R1
+!s11e vcom 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z3 d/home/tkloser/Desktop/SW-Testing/sw-cpre381-toolflow/cpre381-toolflow/proj/src
+T_opt
+!s110 1745608491
+VcKN17QCfBSaWj2F=nBEX=1
+Z4 04 14 9 work mips_processor structure 1
+=1-7486e2289d02-680bdf2b-4ae03-765c
+R1
+Z5 !s12f OEM100
+Z6 !s12b OEM100
+Z7 !s124 OEM100
+Z8 !s135 nogc
+Z9 o-quiet -auto_acc_if_foreign -work work +acc
+Z10 tCvgOpt 0
+n@_opt
+Z11 OL;O;2024.2;79
+R3
+T_opt1
+!s110 1746313768
+V:PTzlGQ1?a7@dB<H8JZb>2
+R4
+=1-7486e228c89d-6816a228-bbff1-db5c
+R1
+R5
+R6
+R7
+R8
+R9
+R10
+n@_opt1
+R11
+R3
+T_opt2
+!s110 1745855991
+V:=f<m0g1?DzK83?N:gSM21
+04 17 10 work pipeline_register behavioral 1
+=1-7486e228c89d-680fa5f6-df0ea-30f5
+R1
+R5
+R6
+R7
+R8
+o-quiet -auto_acc_if_foreign -work work
+R10
+n@_opt2
+R11
+R3
+Eadd_sub_n
+Z12 w1745449137
+Z13 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z14 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 228
+Z15 d/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src
+Z16 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Add_Sub_N.vhd
+Z17 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Add_Sub_N.vhd
+l0
+L4 1
+Vb[o8B7A[YoeZ:zLzMgI8S1
+!s100 S_no6S]3oi421oA<hB65H3
+Z18 OL;C;2024.2;79
+32
+Z19 !s110 1746314226
+!i10b 1
+Z20 !s108 1746314226.000000
+Z21 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Add_Sub_N.vhd|
+Z22 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Add_Sub_N.vhd|
+!i113 0
+Z23 o-work work
+Z24 tExplicit 1 CvgOpt 0
+Astructural
+R13
+R14
+DEx4 work 9 add_sub_n 0 22 b[o8B7A[YoeZ:zLzMgI8S1
+!i122 228
+l47
+Z25 L15 57
+V^j2RGeKOALE2[z_=Ql_Hk3
+!s100 mGQO27iDMf3lPlKdDi@<X3
+R18
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 0
+R23
+R24
+Eadder_32
+R12
+Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R13
+R14
+!i122 229
+R15
+Z27 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Adder_32.vhd
+Z28 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Adder_32.vhd
+l0
+L5 1
+VaokUmVJg^^A@PkbiSCVLi1
+!s100 RjWYNdJ4]k0FAk2>QPSFc1
+R18
+32
+R19
+!i10b 1
+R20
+Z29 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Adder_32.vhd|
+Z30 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Adder_32.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 8 adder_32 0 22 aokUmVJg^^A@PkbiSCVLi1
+!i122 229
+l15
+L13 7
+V_VPJM8]?6T]2;^Zf3BIaF0
+!s100 YRBDU63URAbNM;>4BkoXU2
+R18
+32
+R19
+!i10b 1
+R20
+R29
+R30
+!i113 0
+R23
+R24
+Eadder_4
+R12
+Z31 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z32 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R13
+R14
+!i122 230
+R15
+Z33 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Adder_4.vhd
+Z34 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Adder_4.vhd
+l0
+L5 1
+VOzhaM=4eJk0@X?RKP4hTI0
+!s100 GcbS493VaPe5RK97oPLl;1
+R18
+32
+R19
+!i10b 1
+R20
+Z35 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Adder_4.vhd|
+Z36 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Adder_4.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R31
+R32
+R13
+R14
+DEx4 work 7 adder_4 0 22 OzhaM=4eJk0@X?RKP4hTI0
+!i122 230
+l14
+L12 6
+Vok[znWDD>g:]Rj9<eJcc40
+!s100 FA43iQYkW3@FIaj10Sm5B0
+R18
+32
+R19
+!i10b 1
+R20
+R35
+R36
+!i113 0
+R23
+R24
+Ealu
+R12
+R26
+R13
+R14
+!i122 231
+R15
+Z37 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/alu.vhd
+Z38 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/alu.vhd
+l0
+L5 1
+VRU:2e;VT=bP^6YGa0U4kU3
+!s100 idjlko0:>Do;oMl8Kf0g]2
+R18
+32
+R19
+!i10b 1
+R20
+Z39 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/alu.vhd|
+Z40 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/alu.vhd|
+!i113 0
+R23
+R24
+Astructural
+R26
+R13
+R14
+DEx4 work 3 alu 0 22 RU:2e;VT=bP^6YGa0U4kU3
+!i122 231
+l61
+L20 122
+VigCN@Ig;NSP;fdT:mjJ3;0
+!s100 2nMC_5LhN:LK>KBBBoHom0
+R18
+32
+R19
+!i10b 1
+R20
+R39
+R40
+!i113 0
+R23
+R24
+Eandg2
+R12
+R13
+R14
+!i122 232
+R15
+Z41 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/andg2.vhd
+Z42 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/andg2.vhd
+l0
+Z43 L23 1
+VQ@<<<@nlJ=eiIl4BJDFzW2
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R18
+32
+R19
+!i10b 1
+R20
+Z44 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/andg2.vhd|
+Z45 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/andg2.vhd|
+!i113 0
+R23
+R24
+Adataflow
+R13
+R14
+DEx4 work 5 andg2 0 22 Q@<<<@nlJ=eiIl4BJDFzW2
+!i122 232
+l32
+Z46 L31 6
+VJVOzCk?IH:iJ5bCRU`CK13
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R18
+32
+R19
+!i10b 1
+R20
+R44
+R45
+!i113 0
+R23
+R24
+Ebarrelshifter
+R12
+R26
+R13
+R14
+!i122 233
+R15
+Z47 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/barrelshifter.vhd
+Z48 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/barrelshifter.vhd
+l0
+L5 1
+VF72Go44kki=nLEOBhnRc22
+!s100 Z`ScPNf?V99diFjO2TjX63
+R18
+32
+Z49 !s110 1746314227
+!i10b 1
+R20
+Z50 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/barrelshifter.vhd|
+Z51 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/barrelshifter.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 13 barrelshifter 0 22 F72Go44kki=nLEOBhnRc22
+!i122 233
+l15
+L14 36
+V33Bh]3hLXSZXdkXQbAYb23
+!s100 3ThY7Bh;fH=j6^biL]LHM2
+R18
+32
+R49
+!i10b 1
+R20
+R50
+R51
+!i113 0
+R23
+R24
+Econtrol_unit
+R12
+R26
+R13
+R14
+!i122 234
+R15
+Z52 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/control_data.vhd
+Z53 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/control_data.vhd
+l0
+L6 1
+VR=:0JT8JKmGGR3T:9e0NJ0
+!s100 _35H_P2<7Mddo;mlK3Jd01
+R18
+32
+R49
+!i10b 1
+Z54 !s108 1746314227.000000
+Z55 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/control_data.vhd|
+Z56 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/control_data.vhd|
+!i113 0
+R23
+R24
+Adataflow
+R26
+R13
+R14
+DEx4 work 12 control_unit 0 22 R=:0JT8JKmGGR3T:9e0NJ0
+!i122 234
+l33
+L32 132
+VOZ`Q7B[1^c_W>1LAP3JiQ0
+!s100 jFY_X9W<iI[h8>3QGGFlD3
+R18
+32
+R49
+!i10b 1
+R54
+R55
+R56
+!i113 0
+R23
+R24
+Edecoder_5t32
+R12
+R13
+R14
+!i122 235
+R15
+Z57 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Decoder_5t32.vhd
+Z58 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Decoder_5t32.vhd
+l0
+L4 1
+VnI[PbV[KE6]f`DMB56KJ;1
+!s100 UogdZ>K>KR;me`Jh1j3lb0
+R18
+32
+R49
+!i10b 1
+R54
+Z59 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Decoder_5t32.vhd|
+Z60 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Decoder_5t32.vhd|
+!i113 0
+R23
+R24
+Adataflow
+R13
+R14
+DEx4 work 12 decoder_5t32 0 22 nI[PbV[KE6]f`DMB56KJ;1
+!i122 235
+l13
+L11 40
+VN6:03SD_JgK05AB0IANVH0
+!s100 UJ^H8lbK6z`^48aM2;]9X1
+R18
+32
+R49
+!i10b 1
+R54
+R59
+R60
+!i113 0
+R23
+R24
+Edffg
+Z61 w1746481267
+R13
+R14
+!i122 272
+R15
+Z62 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/dffg.vhd
+Z63 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/dffg.vhd
+l0
+R43
+V<]b9Vm3e`GAN;Cnj:57L>2
+!s100 T4gcXQGMCgKJbn8XhBM;b0
+R18
+32
+Z64 !s110 1746481269
+!i10b 1
+Z65 !s108 1746481269.000000
+Z66 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/dffg.vhd|
+Z67 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/dffg.vhd|
+!i113 0
+R23
+R24
+Amixed
+R13
+R14
+DEx4 work 4 dffg 0 22 <]b9Vm3e`GAN;Cnj:57L>2
+!i122 272
+l37
+L33 29
+VH9b:hbhfHK]gC_H1Gi`Of3
+!s100 >6FTn<AX[Xmag:[=gS[8b2
+R18
+32
+R64
+!i10b 1
+R65
+R66
+R67
+!i113 0
+R23
+R24
+Edffg_n
+R12
+R13
+R14
+!i122 273
+R15
+Z68 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/dffg_n.vhd
+Z69 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/dffg_n.vhd
+l0
+L4 1
+V_`kU7aFAT9@ZURPGIijO;1
+!s100 JGlB29T89MkDeLPM=D^a<2
+R18
+32
+Z70 !s110 1746481272
+!i10b 1
+Z71 !s108 1746481272.000000
+Z72 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/dffg_n.vhd|
+Z73 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/dffg_n.vhd|
+!i113 0
+R23
+R24
+Astructural
+R13
+R14
+DEx4 work 6 dffg_n 0 22 _`kU7aFAT9@ZURPGIijO;1
+!i122 273
+l24
+L14 22
+Vki24V[NWDBkSU`G20gQWF1
+!s100 E;@UVBPFD?zjThN1>bfGz0
+R18
+32
+R70
+!i10b 1
+R71
+R72
+R73
+!i113 0
+R23
+R24
+Eequalitychecker
+R12
+R26
+R13
+R14
+!i122 238
+R15
+Z74 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/EqualityChecker.vhd
+Z75 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/EqualityChecker.vhd
+l0
+L5 1
+V`OPPf^13PhGY70JQ:FnNo0
+!s100 f6@UGg^`VP48GUndCg8mk0
+R18
+32
+R49
+!i10b 1
+R54
+Z76 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/EqualityChecker.vhd|
+Z77 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/EqualityChecker.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 15 equalitychecker 0 22 `OPPf^13PhGY70JQ:FnNo0
+!i122 238
+l17
+L14 14
+VMn5;YN2fc4NUIcbFK>AJ80
+!s100 0V482bf1eJ;QM]@_nILB;0
+R18
+32
+R49
+!i10b 1
+R54
+R76
+R77
+!i113 0
+R23
+R24
+Eex_mem_registers
+Z78 w1746137929
+R26
+R13
+R14
+!i122 239
+R15
+Z79 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/EX_MEM_Registers.vhd
+Z80 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/EX_MEM_Registers.vhd
+l0
+L5 1
+VB3cGl5NYC]45=^d<^eEgg0
+!s100 ^4mG54aeCb@UzaIfz1kK]3
+R18
+32
+R49
+!i10b 1
+R54
+Z81 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/EX_MEM_Registers.vhd|
+Z82 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/EX_MEM_Registers.vhd|
+!i113 0
+R23
+R24
+Astructural
+R26
+R13
+R14
+DEx4 work 16 ex_mem_registers 0 22 B3cGl5NYC]45=^d<^eEgg0
+!i122 239
+l64
+L43 153
+VN]3Fn_mbQTzQc;PIRo1;>1
+!s100 82LXO5T]kjN;n3oCAD<;g2
+R18
+32
+R49
+!i10b 1
+R54
+R81
+R82
+!i113 0
+R23
+R24
+Eextender
+R12
+R26
+R13
+R14
+!i122 240
+R15
+Z83 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Extender.vhd
+Z84 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Extender.vhd
+l0
+L5 1
+VGS99PQ0GMdn8NL6E@O1Sm2
+!s100 L=z@Hc^fmZU29ITjM8ozl1
+R18
+32
+R49
+!i10b 1
+R54
+Z85 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Extender.vhd|
+Z86 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Extender.vhd|
+!i113 0
+R23
+R24
+Adataflow
+R26
+R13
+R14
+DEx4 work 8 extender 0 22 GS99PQ0GMdn8NL6E@O1Sm2
+!i122 240
+l12
+L11 7
+Vd1z9Q[Ec9hlbNPG^XDSFe2
+!s100 ^3H5jOOM3;[e4>_aM7_dz1
+R18
+32
+R49
+!i10b 1
+R54
+R85
+R86
+!i113 0
+R23
+R24
+Eforwarding_unit
+Z87 w1746393703
+R26
+R13
+R14
+!i122 271
+R15
+Z88 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Forward_Unit.vhd
+Z89 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Forward_Unit.vhd
+l0
+L5 1
+V:lkST4RfdCTgN>Y8j;khD0
+!s100 KKB4F^@j;BfB9ifU:5ahm0
+R18
+32
+Z90 !s110 1746393738
+!i10b 1
+Z91 !s108 1746393738.000000
+Z92 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Forward_Unit.vhd|
+Z93 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Forward_Unit.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 15 forwarding_unit 0 22 :lkST4RfdCTgN>Y8j;khD0
+!i122 271
+l26
+L25 49
+VjVFL[<E45Nd@D`?2M0_4c3
+!s100 `Tg_[kK0U^ckXPFlnLon@1
+R18
+32
+R90
+!i10b 1
+R91
+R92
+R93
+!i113 0
+R23
+R24
+Efulladder
+R12
+R13
+R14
+!i122 242
+R15
+Z94 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/fulladder.vhd
+Z95 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/fulladder.vhd
+l0
+L4 1
+Ve2>TMC5U0HLFj;bCzlLii3
+!s100 TWj21DGB0ke;E1Be;Ul^k2
+R18
+32
+R49
+!i10b 1
+R54
+Z96 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/fulladder.vhd|
+Z97 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/fulladder.vhd|
+!i113 0
+R23
+R24
+Astructure
+R13
+R14
+DEx4 work 9 fulladder 0 22 e2>TMC5U0HLFj;bCzlLii3
+!i122 242
+l39
+R25
+VfVCGnoHQETB;<77B6a`l40
+!s100 0WK492UV@BH8XFzjBIH9=3
+R18
+32
+R49
+!i10b 1
+R54
+R96
+R97
+!i113 0
+R23
+R24
+Efulladder_n
+R12
+R13
+R14
+!i122 243
+R15
+Z98 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/fullAdder_N.vhd
+Z99 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/fullAdder_N.vhd
+l0
+L4 1
+V=g1V@@<CKBzOalHZZG:593
+!s100 28h1AM^j4L=Ic0TYI=fVH0
+R18
+32
+R49
+!i10b 1
+R54
+Z100 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/fullAdder_N.vhd|
+Z101 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/fullAdder_N.vhd|
+!i113 0
+R23
+R24
+Astructural
+R13
+R14
+DEx4 work 11 fulladder_n 0 22 =g1V@@<CKBzOalHZZG:593
+!i122 243
+l39
+L16 63
+VkR@LXJG_`l@I:fjIi[f^03
+!s100 :aZd_oLlbi3`zbI8Rci`;1
+R18
+32
+R49
+!i10b 1
+R54
+R100
+R101
+!i113 0
+R23
+R24
+Ehazard_detection_unit
+Z102 w1746313437
+R13
+R14
+!i122 244
+R15
+Z103 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Hazard_Detection_Unit.vhd
+Z104 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Hazard_Detection_Unit.vhd
+l0
+L4 1
+V;NhGeCHY:ekU31IO4h8Yf3
+!s100 [1FNEjQQ[2b=f7889=E8l3
+R18
+32
+R49
+!i10b 1
+R54
+Z105 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Hazard_Detection_Unit.vhd|
+Z106 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Hazard_Detection_Unit.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R13
+R14
+DEx4 work 21 hazard_detection_unit 0 22 ;NhGeCHY:ekU31IO4h8Yf3
+!i122 244
+l29
+L28 31
+VU:7n:I;?9o`hM=jPmolOM1
+!s100 ijC>lJYTieS<ke_VKSCE>3
+R18
+32
+R49
+!i10b 1
+R54
+R105
+R106
+!i113 0
+R23
+R24
+Eid_ex_registers
+Z107 w1746138988
+R26
+R13
+R14
+!i122 245
+R15
+Z108 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/ID_EX_Registers.vhd
+Z109 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/ID_EX_Registers.vhd
+l0
+L5 1
+VC9i6MK7ANVEX[B=[5c30i3
+!s100 56]K]GX8^_SD8B<2^g;jl0
+R18
+32
+R49
+!i10b 1
+R54
+Z110 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/ID_EX_Registers.vhd|
+Z111 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/ID_EX_Registers.vhd|
+!i113 0
+R23
+R24
+Astructural
+R26
+R13
+R14
+DEx4 work 15 id_ex_registers 0 22 C9i6MK7ANVEX[B=[5c30i3
+!i122 245
+l83
+L62 222
+VRB1dCVVIb;BHmal4_CYeO3
+!s100 RWcKQKQ[PA1<h]?hn]idg1
+R18
+32
+R49
+!i10b 1
+R54
+R110
+R111
+!i113 0
+R23
+R24
+Eif_id_registers
+Z112 w1746137370
+R26
+R13
+R14
+!i122 246
+R15
+Z113 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/IF_ID_Registers.vhd
+Z114 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/IF_ID_Registers.vhd
+l0
+L5 1
+Vd;d7T[YUE70jg<fPTUGE<3
+!s100 co24?S9Sin;ibU60Yb7dP0
+R18
+32
+R49
+!i10b 1
+R54
+Z115 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/IF_ID_Registers.vhd|
+Z116 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/IF_ID_Registers.vhd|
+!i113 0
+R23
+R24
+Astructural
+R26
+R13
+R14
+DEx4 work 15 if_id_registers 0 22 d;d7T[YUE70jg<fPTUGE<3
+!i122 246
+l27
+L17 28
+V;N_>?bLz39ABeHbKGKm=A2
+!s100 k=JACl2V:eSSfeRL`@@j93
+R18
+32
+R49
+!i10b 1
+R54
+R115
+R116
+!i113 0
+R23
+R24
+Einvg
+R12
+R13
+R14
+!i122 247
+R15
+Z117 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/invg.vhd
+Z118 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/invg.vhd
+l0
+R43
+VQ?6hb9ePk@>kZZ9k]hNSO3
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R18
+32
+R49
+!i10b 1
+R54
+Z119 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/invg.vhd|
+Z120 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/invg.vhd|
+!i113 0
+R23
+R24
+Adataflow
+R13
+R14
+DEx4 work 4 invg 0 22 Q?6hb9ePk@>kZZ9k]hNSO3
+!i122 247
+l31
+L30 6
+Vch>li:oKYZkCO5]GamViK1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R18
+32
+R49
+!i10b 1
+R54
+R119
+R120
+!i113 0
+R23
+R24
+Eload_unit
+R12
+R26
+R13
+R14
+!i122 248
+R15
+Z121 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/load_unit.vhd
+Z122 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/load_unit.vhd
+l0
+L5 1
+V:AXU`oQPihEKm_9lf6[3E2
+!s100 `:V=LJie9M8eT:aMX:PDP0
+R18
+32
+R49
+!i10b 1
+R54
+Z123 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/load_unit.vhd|
+Z124 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/load_unit.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 9 load_unit 0 22 :AXU`oQPihEKm_9lf6[3E2
+!i122 248
+l19
+L14 39
+VhFG0N?_MM_E2jcGALkEbP1
+!s100 >c[OhV8d?6@CBR49fSj=a0
+R18
+32
+R49
+!i10b 1
+R54
+R123
+R124
+!i113 0
+R23
+R24
+Emem
+R12
+R26
+R13
+R14
+!i122 249
+R15
+Z125 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mem.vhd
+Z126 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+R18
+32
+R49
+!i10b 1
+R54
+Z127 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mem.vhd|
+Z128 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/mem.vhd|
+!i113 0
+R23
+R24
+Artl
+R26
+R13
+R14
+DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 249
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R18
+32
+R49
+!i10b 1
+R54
+R127
+R128
+!i113 0
+R23
+R24
+Emem_wb_registers
+Z129 w1746138084
+R26
+R13
+R14
+!i122 250
+R15
+Z130 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/MEM_WB_Reigsters.vhd
+Z131 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/MEM_WB_Reigsters.vhd
+l0
+L5 1
+VGlYda=kFY0of]OVkNjefL2
+!s100 1;L<jI8WWjIXLekDNff@A2
+R18
+32
+R49
+!i10b 1
+R54
+Z132 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/MEM_WB_Reigsters.vhd|
+Z133 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/MEM_WB_Reigsters.vhd|
+!i113 0
+R23
+R24
+Astructural
+R26
+R13
+R14
+DEx4 work 16 mem_wb_registers 0 22 GlYda=kFY0of]OVkNjefL2
+!i122 250
+l61
+L40 144
+VSd`dLimbmclN<zgW6XblL1
+!s100 BE2F?RQORnH?HD1;6QhU^2
+R18
+32
+R49
+!i10b 1
+R54
+R132
+R133
+!i113 0
+R23
+R24
+Emips_processor
+Z134 w1746313760
+Z135 DPx4 work 10 mips_types 0 22 izYKnZ8jPl5`Mz33d6HJ`0
+R13
+R14
+!i122 270
+R15
+Z136 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+Z137 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd
+l0
+R43
+V10Ghca[jRV>_B6R;9JA2L3
+!s100 H[0875z5OZm2QnkRY7o5_2
+R18
+32
+Z138 !s110 1746314284
+!i10b 1
+Z139 !s108 1746314284.000000
+Z140 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd|
+Z141 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/TopLevel/MIPS_Processor.vhd|
+!i113 0
+R23
+R24
+Astructure
+R135
+R13
+R14
+DEx4 work 14 mips_processor 0 22 10Ghca[jRV>_B6R;9JA2L3
+!i122 270
+l548
+L35 937
+V@e84b545C5Zg<XmXebRzD1
+!s100 3=@LgAMjeHA]]>jzd:>XY2
+R18
+32
+R138
+!i10b 1
+R139
+R140
+R141
+!i113 0
+R23
+R24
+Pmips_types
+R13
+R14
+!i122 252
+R12
+R15
+Z142 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/MIPS_types.vhd
+Z143 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/MIPS_types.vhd
+l0
+Z144 L15 16
+VizYKnZ8jPl5`Mz33d6HJ`0
+!s100 CGz]1]5O7]6fDTdQ81^dJ2
+R18
+32
+R49
+!i10b 1
+R54
+Z145 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/MIPS_types.vhd|
+Z146 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/MIPS_types.vhd|
+!i113 0
+R23
+R24
+Bbody
+R135
+R13
+R14
+!i122 252
+l0
+L32 3
+V0^6U3YVRXJfmU6A8Qi^LL3
+!s100 AE1LgfEig5MET0``5CNRC2
+R18
+32
+R49
+!i10b 1
+R54
+R145
+R146
+!i113 0
+R23
+R24
+Emux2t1
+R12
+R13
+R14
+!i122 253
+R15
+Z147 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux2t1.vhd
+Z148 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux2t1.vhd
+l0
+L4 1
+Vm8Qk>diC@>OMm[542`Eii1
+!s100 6E9QVU@?26=:acbkB:3N61
+R18
+32
+R49
+!i10b 1
+R54
+Z149 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux2t1.vhd|
+Z150 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux2t1.vhd|
+!i113 0
+R23
+R24
+Astructure
+R13
+R14
+DEx4 work 6 mux2t1 0 22 m8Qk>diC@>OMm[542`Eii1
+!i122 253
+l35
+L12 39
+V0jlz:25ZHPn:@_G3TJ;5<1
+!s100 HKK]KzcHcDXO@JLDkMMi>2
+R18
+32
+R49
+!i10b 1
+R54
+R149
+R150
+!i113 0
+R23
+R24
+Emux2t1_n
+R12
+R13
+R14
+!i122 254
+R15
+Z151 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux2t1_N.vhd
+Z152 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux2t1_N.vhd
+l0
+L5 1
+Vkz93;WTh]ARR[a=TlXhZo0
+!s100 [Jdb1L<zHnZX674_M0[A<0
+R18
+32
+R49
+!i10b 1
+R54
+Z153 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux2t1_N.vhd|
+Z154 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux2t1_N.vhd|
+!i113 0
+R23
+R24
+Astructural
+R13
+R14
+DEx4 work 8 mux2t1_n 0 22 kz93;WTh]ARR[a=TlXhZo0
+!i122 254
+l23
+L14 21
+V:dl0]bSK]?AmAFQVhXP[d1
+!s100 Im4^8<M_cNKE[Wf9nzaG71
+R18
+32
+R49
+!i10b 1
+R54
+R153
+R154
+!i113 0
+R23
+R24
+Emux32t1
+R12
+R26
+R13
+R14
+R135
+!i122 255
+R15
+Z155 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux32t1.vhd
+Z156 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux32t1.vhd
+l0
+L6 1
+V3h505MSFQ<aj474kzEVZL0
+!s100 hM^=_IDJQL;9nW8@?EMY>1
+R18
+32
+Z157 !s110 1746314228
+!i10b 1
+R54
+Z158 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux32t1.vhd|
+Z159 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux32t1.vhd|
+!i113 0
+R23
+R24
+Adataflow
+R26
+R13
+R14
+R135
+DEx4 work 7 mux32t1 0 22 3h505MSFQ<aj474kzEVZL0
+!i122 255
+l14
+L12 7
+V<Rlh?Fm2:aT0a?iJ26UY00
+!s100 `XcL11chchjZ_]Hi]U9;72
+R18
+32
+R157
+!i10b 1
+R54
+R158
+R159
+!i113 0
+R23
+R24
+Emux3to1
+R12
+R26
+R13
+R14
+!i122 256
+R15
+Z160 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux3to1.vhd
+Z161 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux3to1.vhd
+l0
+L5 1
+VGZ^7K3oMZCMIn42A>WZ5C0
+!s100 DGHWTKIRFYfj@b?SAehD:3
+R18
+32
+R157
+!i10b 1
+Z162 !s108 1746314228.000000
+Z163 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux3to1.vhd|
+Z164 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux3to1.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 7 mux3to1 0 22 GZ^7K3oMZCMIn42A>WZ5C0
+!i122 256
+l17
+L16 16
+VL7>l4Ac6[4MB7N2zgzfbR3
+!s100 zgzUafDEC[NGVjYhB5W@b0
+R18
+32
+R157
+!i10b 1
+R162
+R163
+R164
+!i113 0
+R23
+R24
+Emux4to1
+Z165 w1746137399
+R26
+R13
+R14
+!i122 257
+R15
+Z166 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux4to1.vhd
+Z167 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux4to1.vhd
+l0
+L5 1
+V7>Uk[ab;=1DZN0>_FcPU:0
+!s100 lSh<8Z4AbK03?U_TA`:ET3
+R18
+32
+R157
+!i10b 1
+R162
+Z168 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux4to1.vhd|
+Z169 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/mux4to1.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 7 mux4to1 0 22 7>Uk[ab;=1DZN0>_FcPU:0
+!i122 257
+l18
+L17 18
+VbY8gJd5?Kl]ohd?2WCF1O0
+!s100 n[XbSPGaD73hRkIok]BX40
+R18
+32
+R157
+!i10b 1
+R162
+R168
+R169
+!i113 0
+R23
+R24
+Eonescomp
+R12
+R13
+R14
+!i122 258
+R15
+Z170 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/onesComp.vhd
+Z171 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/onesComp.vhd
+l0
+L4 1
+VgO>MDU^d3KYfTgHYA6hR92
+!s100 J3mGKN;L3e^BA<0kgbC7R0
+R18
+32
+R157
+!i10b 1
+R162
+Z172 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/onesComp.vhd|
+Z173 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/onesComp.vhd|
+!i113 0
+R23
+R24
+Astructure
+R13
+R14
+DEx4 work 8 onescomp 0 22 gO>MDU^d3KYfTgHYA6hR92
+!i122 258
+l17
+L9 13
+V06YO[JT`;S8i<5e5::E[S0
+!s100 ;g8JkS0=GW]`K;G;Z@?;43
+R18
+32
+R157
+!i10b 1
+R162
+R172
+R173
+!i113 0
+R23
+R24
+Eonescomp_n
+R12
+R13
+R14
+!i122 259
+R15
+Z174 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/onesComp_N.vhd
+Z175 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/onesComp_N.vhd
+l0
+L4 1
+V9J9T5_]z29K<mQhQ5;=il0
+!s100 6VzQnYCzzF4hK3e:lVSc81
+R18
+32
+R157
+!i10b 1
+R162
+Z176 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/onesComp_N.vhd|
+Z177 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/onesComp_N.vhd|
+!i113 0
+R23
+R24
+Astructural
+R13
+R14
+DEx4 work 10 onescomp_n 0 22 9J9T5_]z29K<mQhQ5;=il0
+!i122 259
+l18
+L11 16
+VgJfY>]N5hP=HNhDZfFTSa3
+!s100 5hk^e^12F^iBO>nYB<h8K0
+R18
+32
+R157
+!i10b 1
+R162
+R176
+R177
+!i113 0
+R23
+R24
+Eorg2
+R12
+R13
+R14
+!i122 260
+R15
+Z178 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/org2.vhd
+Z179 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/org2.vhd
+l0
+R43
+V[C`FCj=kL0CTBYLlbjJzD3
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R18
+32
+R157
+!i10b 1
+R162
+Z180 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/org2.vhd|
+Z181 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/org2.vhd|
+!i113 0
+R23
+R24
+Adataflow
+R13
+R14
+DEx4 work 4 org2 0 22 [C`FCj=kL0CTBYLlbjJzD3
+!i122 260
+l32
+R46
+VNHGn>Kh:]BEh4o]ImiG<d3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R18
+32
+R157
+!i10b 1
+R162
+R180
+R181
+!i113 0
+R23
+R24
+Ppackage_t_bus_32x32
+R13
+R14
+!i122 261
+R12
+R15
+8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/package_t_bus_32x32.vhd
+F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/package_t_bus_32x32.vhd
+l0
+L4 4
+V;1bZNcl^EV0cmMWE;74H>2
+!s100 LdMklZiGiX1UWHRN94neH2
+R18
+32
+R157
+!i10b 1
+R162
+!s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/package_t_bus_32x32.vhd|
+!s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/package_t_bus_32x32.vhd|
+!i113 0
+R23
+R24
+Epc
+Z182 w1746137296
+R26
+R13
+R14
+!i122 262
+R15
+Z183 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/PC.vhd
+Z184 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/PC.vhd
+l0
+L5 1
+VT8N@b]LfSdo3`gEWJT:[S2
+!s100 FUjnNURKO8`NB:MjIDPQi2
+R18
+32
+R157
+!i10b 1
+R162
+Z185 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/PC.vhd|
+Z186 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/PC.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 2 pc 0 22 T8N@b]LfSdo3`gEWJT:[S2
+!i122 262
+l14
+L13 14
+VZJ_bYgzfA]=R5AGQmF1=82
+!s100 6[MaPWAIeezPEcJJj=1B?1
+R18
+32
+R157
+!i10b 1
+R162
+R185
+R186
+!i113 0
+R23
+R24
+Epipeline_register
+Z187 w1746137435
+R26
+R13
+R14
+!i122 263
+R15
+Z188 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Pipeline_Register.vhd
+Z189 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Pipeline_Register.vhd
+l0
+L5 1
+VcES8`YBYka3lSESZE9KTJ3
+!s100 4GV3c:N4OShE3VZiG=7=22
+R18
+32
+R157
+!i10b 1
+R162
+Z190 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Pipeline_Register.vhd|
+Z191 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Pipeline_Register.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 17 pipeline_register 0 22 cES8`YBYka3lSESZE9KTJ3
+!i122 263
+l15
+L14 16
+V1M]7zUM[55[e^3DX^3ZU41
+!s100 WoP^?AEZEQ>P3SoG=[MRS1
+R18
+32
+R157
+!i10b 1
+R162
+R190
+R191
+!i113 0
+R23
+R24
+Epipeline_register_n
+Z192 w1746137423
+R26
+R13
+R14
+!i122 264
+R15
+Z193 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Pipeline_Register_N.vhd
+Z194 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Pipeline_Register_N.vhd
+l0
+L5 1
+VIAbiH0E:jVY9ZWYlj6LO41
+!s100 9ifji0^Xa::UZ:;h0_b7H1
+R18
+32
+R157
+!i10b 1
+R162
+Z195 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Pipeline_Register_N.vhd|
+Z196 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Pipeline_Register_N.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R26
+R13
+R14
+DEx4 work 19 pipeline_register_n 0 22 IAbiH0E:jVY9ZWYlj6LO41
+!i122 264
+l16
+R144
+V6o^i^e=]9Klzf1Hi?P1lf0
+!s100 GB;7fzIcalMJ[U@@J][>T1
+R18
+32
+R157
+!i10b 1
+R162
+R195
+R196
+!i113 0
+R23
+R24
+Eregister_file
+Z197 w1746481250
+R135
+R26
+R13
+R14
+!i122 274
+R15
+Z198 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Register_File.vhd
+Z199 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Register_File.vhd
+l0
+L6 1
+VD:PZHJO[=PZ=i8FEHQZ[c2
+!s100 FYUK=igcDiIQTTQXXRB;l1
+R18
+32
+Z200 !s110 1746481285
+!i10b 1
+Z201 !s108 1746481285.000000
+Z202 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Register_File.vhd|
+Z203 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Register_File.vhd|
+!i113 0
+R23
+R24
+Amixed
+R135
+R26
+R13
+R14
+Z204 DEx4 work 13 register_file 0 22 D:PZHJO[=PZ=i8FEHQZ[c2
+!i122 274
+l44
+Z205 L19 86
+VnBdV1JWS7ONMgE`zeO9nZ2
+!s100 f[4WZf9NPB6Zj@_daN_:R2
+R18
+32
+R200
+!i10b 1
+R201
+R202
+R203
+!i113 0
+R23
+R24
+Eshift_left_2
+R12
+R32
+R31
+R13
+R14
+!i122 266
+R15
+Z206 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Shift_left_2.vhd
+Z207 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Shift_left_2.vhd
+l0
+L6 1
+VgIP[bK0[M[a8fBZ[;n:BN0
+!s100 ULoCUUeSQ]kIC`HD0RV1K0
+R18
+32
+R157
+!i10b 1
+R162
+Z208 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Shift_left_2.vhd|
+Z209 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Shift_left_2.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R32
+R31
+R13
+R14
+DEx4 work 12 shift_left_2 0 22 gIP[bK0[M[a8fBZ[;n:BN0
+!i122 266
+l14
+Z210 L13 4
+VzP`2A3CLjlT;A3OFMhEMR2
+!s100 U8eEOSh^`ZPVCJk7hSRaU0
+R18
+32
+R157
+!i10b 1
+R162
+R208
+R209
+!i113 0
+R23
+R24
+Eshift_left_2_26
+R12
+R32
+R31
+R13
+R14
+!i122 267
+R15
+Z211 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Shift_left_2_26.vhd
+Z212 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Shift_left_2_26.vhd
+l0
+L6 1
+VB]aE@nIZii=a=X<=b34:G1
+!s100 @o`_PhzDL3WIicb]OWdnc0
+R18
+32
+R157
+!i10b 1
+R162
+Z213 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Shift_left_2_26.vhd|
+Z214 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/Shift_left_2_26.vhd|
+!i113 0
+R23
+R24
+Abehavioral
+R32
+R31
+R13
+R14
+DEx4 work 15 shift_left_2_26 0 22 B]aE@nIZii=a=X<=b34:G1
+!i122 267
+l14
+R210
+VgZmzz0n0YC2ZZzmAk>Ck40
+!s100 DU@1l`A9mZn^^SGIOVaTN2
+R18
+32
+R157
+!i10b 1
+R162
+R213
+R214
+!i113 0
+R23
+R24
+Etb_pipeline_register
+Z215 w1745856165
+R26
+R13
+R14
+!i122 268
+R15
+Z216 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/tb_pipeline_register.vhd
+Z217 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/tb_pipeline_register.vhd
+l0
+L5 1
+VYKnoc66OOJX74F7LnFIk[3
+!s100 YN7<oOKhA`Z6=Ch]Fk`BT3
+R18
+32
+R157
+!i10b 1
+R162
+Z218 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/tb_pipeline_register.vhd|
+Z219 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/tb_pipeline_register.vhd|
+!i113 0
+R23
+R24
+Abehavior
+R26
+R13
+R14
+DEx4 work 20 tb_pipeline_register 0 22 YKnoc66OOJX74F7LnFIk[3
+!i122 268
+l49
+L9 174
+V9N^JV8@JKP<5JSGSThZP^1
+!s100 ]l6>gADWd^>Ua:^HMD^6@1
+R18
+32
+R157
+!i10b 1
+R162
+R218
+R219
+!i113 0
+R23
+R24
+Exorg2
+R12
+R13
+R14
+!i122 269
+R15
+Z220 8/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/xorg2.vhd
+Z221 F/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/xorg2.vhd
+l0
+R43
+V;hb`C0MKik;h36`3`SzM60
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R18
+32
+R157
+!i10b 1
+R162
+Z222 !s90 -reportprogress|300|-work|work|/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/xorg2.vhd|
+Z223 !s107 /home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src/xorg2.vhd|
+!i113 0
+R23
+R24
+Adataflow
+R13
+R14
+DEx4 work 5 xorg2 0 22 ;hb`C0MKik;h36`3`SzM60
+!i122 269
+l32
+R46
+VbmLohbkYjJQ`?EHUY>LoL1
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R18
+32
+R157
+!i10b 1
+R162
+R222
+R223
+!i113 0
+R23
+R24

@@ -1,0 +1,22 @@
+library ieee;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Pipeline_Register is 
+   port( iCLK   : in std_logic;
+         iRST   : in std_logic;  -- Reset signal
+         i_D    : in std_logic;
+         o_Q    : out std_logic);
+end Pipeline_Register;
+
+architecture behavioral of Pipeline_Register is
+begin
+  process(iCLK, iRST)
+  begin
+    if (iRST = '1') then
+      o_Q <= '0';  -- Reset to MIPS starting address
+    elsif (rising_edge(iCLK)) then
+      o_Q <= i_D;
+    end if;
+  end process;
+end behavioral;

@@ -1,0 +1,1 @@
+/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 15679776 work.pipeline_register -quiet -auto_acc_if_foreign -work work -allow_unnamed -o _opt2 -id 1-7486e228c89d-680fa5f6-df0ea-30f5 +__design_bin_path+/home/tkloser/Desktop/HW-Testing/hw-cpre381-toolflow/cpre381-toolflow/proj/src

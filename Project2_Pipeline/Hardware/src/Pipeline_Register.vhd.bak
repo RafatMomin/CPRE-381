@@ -1,0 +1,29 @@
+library ieee;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity Pipeline_Register is 
+   port( iCLK    : in std_logic;
+         iRST    : in std_logic;  -- Reset signal
+         iSTALL  : in std_logic;  -- Stall signal
+         iFLUSH  : in std_logic;  -- Flush signal
+         i_D     : in std_logic;
+         o_Q     : out std_logic);
+end Pipeline_Register;
+
+architecture behavioral of Pipeline_Register is
+begin
+  process(iCLK, iRST)
+  begin
+    if (iRST = '1') then
+      o_Q <= '0';  -- Reset to zero
+    elsif (rising_edge(iCLK)) then
+      if (iFLUSH = '1') then
+        o_Q <= '0';  -- Flush/squash the register
+      elsif (iSTALL = '0') then  -- Only update if not stalled
+        o_Q <= i_D;
+      end if;
+      -- If stalled, maintain the current value (implicit)
+    end if;
+  end process;
+end behavioral;

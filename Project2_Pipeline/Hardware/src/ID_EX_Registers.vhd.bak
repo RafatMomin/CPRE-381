@@ -1,0 +1,272 @@
+library ieee;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity ID_EX_Registers is 
+   generic(N : integer := 32);
+   port( iCLK   : in std_logic;
+         iRST   : in std_logic;     -- Reset signal
+         iSTALL : in std_logic;     -- Stall signal
+         iFLUSH : in std_logic;     -- Flush signal
+         i_ALUOp : in std_logic_vector(3 downto 0);
+         i_ALUSrc : in std_logic;
+         i_shift  : in std_logic;
+         i_BNE    : in std_logic;
+         i_shiftvar : in std_logic;
+         i_Overflow_en : in std_logic;
+         i_signExtend : in std_logic_vector(N-1 downto 0);
+         i_rs         : in std_logic_vector(N-1 downto 0);
+         i_rt         : in std_logic_vector(N-1 downto 0);
+         i_rd         : in std_logic_vector(4 downto 0);
+         i_memRead    : in std_logic;
+         i_memWrite   : in std_logic;
+         i_loadWord   : in std_logic;
+         i_loadType   : in std_logic_vector(1 downto 0);
+         i_memToReg   : in std_logic;
+         i_regWrite   : in std_logic;
+         i_halt       : in std_logic;
+         i_regDest    : in std_logic_vector(1 downto 0);
+         i_jal        : in std_logic;
+         i_pc4        : in std_logic_vector(N-1 downto 0);
+         i_addr_rt     : in std_logic_vector(4 downto 0);
+         i_shamt      : in std_logic_vector(N-1 downto 0);
+         o_memRead    : out std_logic;
+         o_memWrite   : out std_logic;
+         o_loadWord   : out std_logic;
+         o_loadType   : out std_logic_vector(1 downto 0);
+         o_memToReg   : out std_logic;
+         o_regWrite   : out std_logic;
+         o_halt       : out std_logic;
+         o_ALUOp : out std_logic_vector(3 downto 0);
+         o_ALUSrc : out std_logic;
+         o_shift  : out std_logic;
+         o_BNE    : out std_logic;
+         o_shiftvar : out std_logic;
+         o_Overflow_en : out std_logic;
+         o_regDest : out std_logic_vector(1 downto 0);
+         o_signExtend : out std_logic_vector(N-1 downto 0);
+         o_rs         : out std_logic_vector(N-1 downto 0);
+         o_rt         : out std_logic_vector(N-1 downto 0);
+         o_rd         : out std_logic_vector(4 downto 0);
+         o_overflow   : out std_logic;
+         o_jal        : out std_logic;
+         o_pc4        : out std_logic_vector(N-1 downto 0);
+         o_addr_rt     : out std_logic_vector(4 downto 0);
+         o_shamt      : out std_logic_vector(N-1 downto 0)
+);
+         
+end ID_EX_Registers;
+
+architecture structural of ID_EX_Registers is
+
+   component Pipeline_Register is  
+   port( iCLK   : in std_logic;
+         iRST   : in std_logic;    -- Reset signal
+         iSTALL : in std_logic;    -- Stall signal
+         iFLUSH : in std_logic;    -- Flush signal
+         i_D    : in std_logic;
+         o_Q    : out std_logic);
+  end component;
+
+   component Pipeline_Register_N is 
+   generic(N : integer := 32); 
+   port( iCLK   : in std_logic;
+         iRST   : in std_logic;    -- Reset signal
+         iSTALL : in std_logic;    -- Stall signal
+         iFLUSH : in std_logic;    -- Flush signal
+         i_D    : in std_logic_vector(N-1 downto 0);
+         o_Q    : out std_logic_vector(N-1 downto 0));
+  end component;
+
+  begin
+
+    ALUOPCODE: Pipeline_Register_N
+      generic map(N => 4)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_ALUOp,
+               o_Q   => o_ALUOp);
+
+    ALU_SOURCE: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_ALUSrc,
+               o_Q   => o_ALUSrc);
+
+    SHIFT: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_shift,
+               o_Q   => o_shift);
+
+     BNE_REG: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_BNE,
+               o_Q   => o_BNE);
+
+     SHIFTVAR: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_shiftvar,
+               o_Q   => o_shiftvar);
+
+    OVERFLOW_EN: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_Overflow_en,
+               o_Q   => o_Overflow_en);
+    
+     SIGNEXTEND: Pipeline_Register_N
+      generic map(N => 32)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_signExtend,
+               o_Q   => o_signExtend);
+
+     R_RS: Pipeline_Register_N
+      generic map(N => 32)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_rs,
+               o_Q   => o_rs);
+
+     R_RT: Pipeline_Register_N
+      generic map(N => 32)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_rt,
+               o_Q   => o_rt);
+
+    RD_DEST: Pipeline_Register_N
+      generic map(N => 5)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_rd,
+               o_Q   => o_rd);
+
+      MEMREAD: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_memRead,
+               o_Q   => o_memRead);
+
+    MEMWRITE: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_memWrite,
+               o_Q   => o_memWrite);
+
+    LDWORD: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_loadWord,
+               o_Q   => o_loadWord);
+
+    LDTYPE: Pipeline_Register_N
+      generic map(N => 2)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_loadType,
+               o_Q   => o_loadType);
+
+    MEM_TO_REG: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_memToReg,
+               o_Q   => o_memToReg);
+
+    REGWRITE: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_regWrite,
+               o_Q   => o_regWrite);
+
+    HALT_SIGNAL: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_halt,
+               o_Q   => o_halt);
+
+     REG_DEST: Pipeline_Register_N
+      generic map(N => 2)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_regDest,
+               o_Q   => o_regDest);
+       
+      JAL: Pipeline_Register
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_jal,
+               o_Q   => o_jal);
+      
+      PC4: Pipeline_Register_N
+      generic map(N => 32)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_pc4,
+               o_Q   => o_pc4);
+
+     ADDRT: Pipeline_Register_N
+      generic map(N => 5)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_addr_rt,
+               o_Q   => o_addr_rt);
+
+     SHAMT: Pipeline_Register_N
+      generic map(N => 32)
+      port map(iCLK  => iCLK,
+               iRST  => iRST,
+               iSTALL => iSTALL,
+               iFLUSH => iFLUSH,
+               i_D   => i_shamt,
+               o_Q   => o_shamt);
+
+     -- Default value for overflow
+     o_overflow <= '0';
+
+end structural;

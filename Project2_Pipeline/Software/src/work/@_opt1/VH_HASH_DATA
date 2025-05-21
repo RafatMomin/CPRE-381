@@ -1,0 +1,43 @@
+[N
+6
+1
+83 /home/tkloser/Desktop/SW-Testing/sw-cpre381-toolflow/cpre381-toolflow/proj/src/work
+4
+1 N
+2
+19 pipeline_register_n
+3
+10 behavioral
+6
+10 structural
+5
+15 if_id_registers
+]
+[G
+1
+5
+6
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+1
+4
+1
+0
+32
+0
+0 0
+0
+0
+]
